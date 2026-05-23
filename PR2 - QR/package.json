@@ -1,0 +1,22 @@
+{
+  "name": "cli-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.15.2",
+    "commander": "^13.1.0",
+    "qrcode": "^1.5.4",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/qrcode": "^1.5.6"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "markdown-enhancer",
+  "displayName": "Markdown Enhancer",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "markdown.previewStyles": [
+      "./styles/github-style.css"
+    ],
+    "markdown.previewScripts": [
+      "./scripts/preview.js"
+    ],
+    "markdown.markdownItPlugins": true
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/markdown-it-container": "^4.0.0",
+    "@types/node": "^25.6.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "markdown-it-container": "^3.0.0",
+    "markdown-it-emoji": "^2.0.2"
+  }
+}
